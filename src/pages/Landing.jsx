@@ -1,3 +1,6 @@
+// Landing page of the app
+// This page contains two circle links that navigate to the developer and illustration pages when clicked.
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import CircleLink from "../components/CircleLink";

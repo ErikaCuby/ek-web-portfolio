@@ -1,3 +1,5 @@
+// Designed circle link component presented for the Landing page of the app
+
 import React from "react";
 import "./CircleLink.css";
 
