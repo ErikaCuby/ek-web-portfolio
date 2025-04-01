@@ -1,7 +1,9 @@
+import Navbar from "../components/Navbar";
+
 const Illustration = () => {
   return (
     <div className="page page-illustration">
-      <nav className="navbar">🎨 Illustration Navbar</nav>
+      <Navbar />
       <div className="content">Welcome to the Art Side</div>
     </div>
   );
