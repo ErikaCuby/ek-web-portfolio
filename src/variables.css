@@ -1,0 +1,9 @@
+:root {
+  --bg-color: #fdfaf6;
+  --text-color: #2a2a2a;
+  --accent-color-code: #c8d3f5;
+  --accent-color-art: #f6c2d9;
+  --font-family: 'Inter', sans-serif;
+  --radius: 999px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}

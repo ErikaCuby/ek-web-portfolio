@@ -1,11 +1,9 @@
 import "./App.css";
+import Landing from "./pages/Landing";
+
 
 function App() {
-  return (
-    <div className="app">
-      <h1>Welcome to Erika’s Portfolio ✨</h1>
-    </div>
-  );
+  return <Landing />;
 }
 
 export default App;
