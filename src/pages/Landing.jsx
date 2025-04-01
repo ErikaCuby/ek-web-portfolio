@@ -1,14 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import CircleLink from "../components/CircleLink";
-import "./Landing.css"; // Assuming you have a CSS file for styles
+import "./Landing.css";
 
 const Landing = () => {
+  const navigate = useNavigate();
+
   const handleCodeClick = () => {
-    alert("Go to Developer Portfolio");
+    navigate("/developer");
   };
 
   const handleArtClick = () => {
-    alert("Go to Illustration Portfolio");
+    navigate("/illustration");
   };
 
   return (
