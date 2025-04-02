@@ -1,0 +1,91 @@
+/* Page base */
+.developer-page {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-bottom: 4rem;
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+/* Projects Section */
+.featured-projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.featured-projects h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* CTA */
+.case-study-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.case-study-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.case-study-cta button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent-color-code);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.case-study-cta button:hover {
+  background-color: var(--accent-color-art);
+}
