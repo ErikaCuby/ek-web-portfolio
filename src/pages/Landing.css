@@ -9,6 +9,23 @@
   flex-direction: row;
 }
 
+.landing-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--bg-color); /* or white with 0.7 alpha */
+  opacity: 0;
+  backdrop-filter: blur(0px);
+  transition: opacity 0.6s ease, backdrop-filter 0.6s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.landing-container.fadeout::after {
+  opacity: 1;
+  backdrop-filter: blur(6px);
+}
+
 @media (max-width: 768px) {
   .landing-container {
     flex-direction: column;

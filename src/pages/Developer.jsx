@@ -19,7 +19,7 @@ const Developer = ({ transitionFromLanding }) => {
   return (
     <PageWrapper fromLanding={transitionFromLanding}>
       <div className="developer-page">
-        {navbarVisible && <Navbar />}
+        {navbarVisible && <Navbar animated={transitionFromLanding} />}
 
         {showContent && (
           <>

@@ -16,7 +16,7 @@ const Landing = () => {
   };
 
   return (
-    <div className="landing-container">
+    <div className={`landing-container ${clicked ? "fadeout" : ""}`}>
       <CircleLink
         label="Code"
         color="var(--accent-color-code)"
