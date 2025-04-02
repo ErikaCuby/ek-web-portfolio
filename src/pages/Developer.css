@@ -89,3 +89,41 @@
 .case-study-cta button:hover {
   background-color: var(--accent-color-art);
 }
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  .case-study-cta p {
+    font-size: 1rem;
+  }
+
+  .case-study-cta button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+}
