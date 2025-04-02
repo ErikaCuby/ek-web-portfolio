@@ -1,33 +1,27 @@
 import { motion } from "framer-motion";
 
-const pageVariants = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  in: {
-    opacity: 1,
-    y: 0,
-  },
-  out: {
-    opacity: 0,
-    y: -20,
-  },
+const fadeSlide = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -30 },
 };
 
-const pageTransition = {
-  duration: 0.6,
-  ease: "easeInOut",
+const heroPortal = {
+  initial: { opacity: 0, scale: 0.9, rotateX: -10 },
+  animate: { opacity: 1, scale: 1, rotateX: 0 },
+  exit: { opacity: 0, scale: 0.85, rotateX: 5 },
 };
 
-const PageWrapper = ({ children }) => {
+const PageWrapper = ({ children, fromLanding }) => {
+  const variants = fromLanding ? heroPortal : fadeSlide;
+
   return (
     <motion.div
       initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
+      animate="animate"
+      exit="exit"
+      variants={variants}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       {children}
     </motion.div>

@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 import PageWrapper from "../components/PageWrapper";
 
 
-const Illustration = () => {
+const Illustration = ({ transitionFromLanding }) => {
   return (
-    <PageWrapper>
+    <PageWrapper fromLanding={transitionFromLanding}>
       <div className="page page-illustration">
         <Navbar />
         <div className="content">Welcome to the Art Side</div>

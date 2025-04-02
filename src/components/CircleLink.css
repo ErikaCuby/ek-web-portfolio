@@ -1,9 +1,8 @@
 
-
 .circle-link {
   width: 200px;
   height: 200px;
-  border-radius: var(--radius);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,9 +11,56 @@
   color: white;
   cursor: pointer;
   box-shadow: var(--shadow);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.circle-link span {
+  transition: opacity 0.3s ease;
 }
 
 .circle-link:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
+}
+
+/* CLICKED CIRCLE */
+.expand-explode {
+  animation: circleExpandCollapse 1.2s forwards;
+}
+
+@keyframes circleExpandCollapse {
+  0% {
+    transform: scale(1.3);
+  }
+  10% {
+    transform: scale(0.5);
+  }
+  30% {
+    transform: scale(1.9);
+  }
+  90% {
+    transform: scale(2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* UNCLICKED CIRCLE */
+.collapse {
+  animation: circleCollapse 0.8s forwards;
+}
+
+@keyframes circleCollapse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
 }

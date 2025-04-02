@@ -1,38 +1,43 @@
-// Landing page of the app
-// This page contains two circle links that navigate to the developer and illustration pages when clicked.
-
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import PageWrapper from "../components/PageWrapper";
 import CircleLink from "../components/CircleLink";
 import "./Landing.css";
 
 const Landing = () => {
+  const [clicked, setClicked] = useState(null);
   const navigate = useNavigate();
 
-  const handleCodeClick = () => {
-    navigate("/developer");
-  };
+  const handleClick = (type) => {
+    setClicked(type);
 
-  const handleArtClick = () => {
-    navigate("/illustration");
+    setTimeout(() => {
+      navigate(`/${type}`);
+    }, 1200); // match duration of animation
   };
 
   return (
-    <PageWrapper>
-      <div className="landing-container">
-        <CircleLink
-          label="Code"
-          color="var(--accent-color-code)"
-          onClick={handleCodeClick}
-        />
-        <CircleLink
-          label="Art"
-          color="var(--accent-color-art)"
-          onClick={handleArtClick}
-        />
-      </div>
-    </PageWrapper>
+    <div className="landing-container">
+      <CircleLink
+        label="Code"
+        color="var(--accent-color-code)"
+        onClick={() => handleClick("developer")}
+        animationClass={
+          clicked === "developer" ? "expand-explode" : clicked ? "collapse" : ""
+        }
+      />
+      <CircleLink
+        label="Art"
+        color="var(--accent-color-art)"
+        onClick={() => handleClick("illustration")}
+        animationClass={
+          clicked === "illustration"
+            ? "expand-explode"
+            : clicked
+            ? "collapse"
+            : ""
+        }
+      />
+    </div>
   );
 };
 
