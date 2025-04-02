@@ -14,9 +14,9 @@ const Navbar = ({ animated = false }) => {
     <MotionTag
       className="navbar"
       {...(animated && {
-        initial: { x: "100%", opacity: 0 },
+        initial: { x: "-100%", opacity: 0 },
         animate: { x: 0, opacity: 1 },
-        transition: { duration: 0.7, ease: "easeOut" },
+        transition: { duration: 0.7, ease: [0.15, 0.85, 0.45, 1] },
       })}
     >
       <div className="navbar-left">
