@@ -32,9 +32,47 @@
 }
 
 .hamburger {
+  width: 30px;
+  height: 22px;
+  position: relative;
   display: none;
-  font-size: 2rem;
   cursor: pointer;
+  z-index: 1001; /* above the dropdown */
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--text-color);
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+/* Animate to ✖ */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
 }
 
 /* Mobile Styles */
@@ -47,7 +85,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     width: 100%;
     padding: 0;
