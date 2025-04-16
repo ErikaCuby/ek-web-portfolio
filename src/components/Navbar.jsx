@@ -1,45 +1,58 @@
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = ({ animated = false }) => {
+const Navbar = ({ animated }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const isDeveloper = location.pathname.includes("developer");
-  const currentSection = isDeveloper ? "developer" : "illustration";
-  const oppositeSection = isDeveloper ? "illustration" : "developer";
 
-  const MotionTag = animated ? motion.nav : "nav";
+  const isDeveloperSection = location.pathname.includes("developer");
+  const currentSection = isDeveloperSection ? "developer" : "illustration";
+  const oppositeSection = isDeveloperSection ? "illustration" : "developer";
+
+  const toggleMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
-    <MotionTag
-      className="navbar"
-      {...(animated && {
-        initial: { x: "-100%", opacity: 0 },
-        animate: { x: 0, opacity: 1 },
-        transition: { duration: 0.7, ease: [0.15, 0.85, 0.45, 1] },
-      })}
-    >
+    <nav className={`navbar ${animated ? "animated" : ""}`}>
       <div className="navbar-left">
-        <Link to="/" className="logo">
-          Erika.dev
+        <Link to="/" className="logo" onClick={closeMenu}>
+          Erika Cuby
         </Link>
       </div>
 
-      <div className="navbar-right">
-        <Link to={`/${currentSection}`} className="nav-link">
+      <div className="hamburger" onClick={toggleMenu}>
+        ☰
+      </div>
+
+      <div className={`navbar-right ${isMobileMenuOpen ? "open" : ""}`}>
+        <Link
+          to={`/${currentSection}`}
+          className="nav-link"
+          onClick={closeMenu}
+        >
           Home
         </Link>
-        <Link to="/about" className="nav-link">
+        <Link to="/about" className="nav-link" onClick={closeMenu}>
           About Me
         </Link>
-        <Link to="/contact" className="nav-link">
+        <Link to="/contact" className="nav-link" onClick={closeMenu}>
           Contact
         </Link>
-        <Link to={`/${oppositeSection}`} className="circle-switch">
-          {oppositeSection === "developer" ? "💻" : "🎨"}
+        <Link
+          to={`/${oppositeSection}`}
+          className="nav-link"
+          onClick={closeMenu}
+        >
+          {oppositeSection.charAt(0).toUpperCase() + oppositeSection.slice(1)}
         </Link>
       </div>
-    </MotionTag>
+    </nav>
   );
 };
 
