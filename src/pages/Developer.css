@@ -70,25 +70,17 @@
   margin-top: 4rem;
 }
 
+/* CTA */
+.case-study-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
 .case-study-cta p {
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.case-study-cta button {
-  padding: 0.75rem 1.5rem;
-  background-color: var(--accent-color-code);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.case-study-cta button:hover {
-  background-color: var(--accent-color-art);
-}
 
 @media (max-width: 768px) {
   .hero-section {
@@ -111,10 +103,7 @@
     font-size: 1rem;
   }
 
-  .case-study-cta button {
-    width: 100%;
-    max-width: 280px;
-  }
+
 }
 
 /* Extra small screens */

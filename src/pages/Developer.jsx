@@ -54,7 +54,9 @@ const Developer = ({ transitionFromLanding }) => {
 
             <section className="case-study-cta">
               <p>Want the full process behind each build?</p>
-              <button>Explore Case Studies</button>
+              <button className="button button-secondary">
+                Explore Case Studies
+              </button>
             </section>
           </>
         )}

@@ -1,10 +1,18 @@
 :root {
+  /* 🎨 Colors */
+  --primary-color: #332d3b;
+  --secondary-color: #4c4c4c;
   --bg-color: #fdfaf6;
   --text-color: #2a2a2a;
-  --accent-color-code: #c8d3f5;
-  --accent-color-art: #f6c2d9;
-  --font-family: 'Inter', sans-serif;
+  --accent-color-code: #c8d3f5; /* color for the circle code */
+  --accent-color-art: #f6c2d9; /* color for the circle art */
   --radius: 999px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --navbar-bg: #ffffff;
+
+
+  /* 🖋 Typography */
+  --font-header: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
 }
+
