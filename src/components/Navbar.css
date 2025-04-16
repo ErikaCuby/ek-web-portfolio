@@ -29,6 +29,13 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+  color: var(--primary-color);
 }
 
 .hamburger {
