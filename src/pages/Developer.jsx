@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import "./Developer.css";
 
 const Developer = () => {
   return (
     <div className="developer-page">
-      <Navbar />
 
       <header className="hero-section">
         <div className="hero-text">
