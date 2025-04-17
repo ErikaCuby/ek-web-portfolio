@@ -3,41 +3,27 @@ import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import Developer from "./pages/Developer";
 import Illustration from "./pages/Illustration";
-import usePreviousLocation from "./hooks/usePreviousLocation";
 import Footer from "./components/Footer";
+import PageWrapper from "./components/PageWrapper";
 
 function App() {
   const location = useLocation();
-  const prevLocation = usePreviousLocation(location.pathname);
-
-  const isLandingToSection =
-    prevLocation === "/" &&
-    (location.pathname === "/developer" ||
-      location.pathname === "/illustration");
-
-  const isLandingPage = location.pathname === "/"; // Add this line
+  const isLandingPage = location.pathname === "/";
 
   return (
-    <>
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Landing />} />
-          <Route
-            path="/developer"
-            element={<Developer transitionFromLanding={isLandingToSection} />}
-          />
-          <Route
-            path="/illustration"
-            element={
-              <Illustration transitionFromLanding={isLandingToSection} />
-            }
-          />
-        </Routes>
-      </AnimatePresence>
+    <AnimatePresence mode="wait">
+      <PageWrapper key={location.pathname}>
+        <>
+          <Routes location={location}>
+            <Route path="/" element={<Landing />} />
+            <Route path="/developer" element={<Developer />} />
+            <Route path="/illustration" element={<Illustration />} />
+          </Routes>
 
-      {/* Show footer everywhere except the landing page */}
-      {!isLandingPage && <Footer />}
-    </>
+          {!isLandingPage && <Footer />}
+        </>
+      </PageWrapper>
+    </AnimatePresence>
   );
 }
 

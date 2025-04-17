@@ -1,27 +1,13 @@
+// components/PageWrapper.jsx
 import { motion } from "framer-motion";
 
-const fadeSlide = {
-  initial: { opacity: 0, y: 30 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -30 },
-};
-
-const heroPortal = {
-  initial: { opacity: 0, scale: 0.9, rotateX: -10 },
-  animate: { opacity: 1, scale: 1, rotateX: 0 },
-  exit: { opacity: 0, scale: 0.85, rotateX: 5 },
-};
-
-const PageWrapper = ({ children, fromLanding }) => {
-  const variants = fromLanding ? heroPortal : fadeSlide;
-
+const PageWrapper = ({ children }) => {
   return (
     <motion.div
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={variants}
-      transition={{ duration: 0.6, ease: "easeInOut" }}
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       {children}
     </motion.div>
@@ -29,3 +15,4 @@ const PageWrapper = ({ children, fromLanding }) => {
 };
 
 export default PageWrapper;
+// This component wraps the page content with a fade-in animation using Framer Motion. It can be used to create smooth transitions between different pages or sections of your application.
