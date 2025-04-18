@@ -1,9 +1,8 @@
 import React from "react";
-import "./About.css"; // Assuming you have a CSS file for styling
 
 const About = () => {
   return (
-    <div className="page-container about-page">
+    <div className="page-container">
       <section className="section-hero">
         <h1 className="page-title">About Me</h1>
         <p className="section-text">
@@ -15,7 +14,7 @@ const About = () => {
 
       <section className="section">
         <h2 className="section-heading">What I love doing</h2>
-        <ul className="about-list">
+        <ul className="section-list">
           <li>💻 Building responsive, user-friendly web interfaces</li>
           <li>🎨 Creating illustrations and digital visuals</li>
           <li>🧠 Mixing logic with storytelling</li>
@@ -23,8 +22,8 @@ const About = () => {
         </ul>
       </section>
 
-      <section className="section section-footer">
-        <p className="section-text italic">
+      <section className="section">
+        <p className="section-text">
           Whether it’s designing a smooth UI or illustrating a whimsical world,
           I bring empathy, curiosity, and attention to detail into every
           project.

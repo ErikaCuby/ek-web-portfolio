@@ -1,9 +1,8 @@
 import React from "react";
-import "./Contact.css"; // only for minimal custom styles, layout is shared via index.css
 
 const Contact = () => {
   return (
-    <div className="page-container contact-page">
+    <div className="page-container">
       <section className="section-hero">
         <h1 className="page-title">Contact Me</h1>
         <p className="section-text">
@@ -14,22 +13,20 @@ const Contact = () => {
 
       <section className="section">
         <h2 className="section-heading">Reach Out</h2>
-        <p className="section-text">
-          You can find me on LinkedIn, GitHub, or shoot me an email directly. I
-          love connecting with creative people and passionate developers!
-        </p>
-        <ul className="contact-links">
+        <ul className="section-list">
           <li>
-            <a href="mailto:you@example.com">📧 you@example.com</a>
+            📧 <a href="mailto:you@example.com">you@example.com</a>
           </li>
           <li>
+            🐱{" "}
             <a href="https://github.com/ErikaCuby" target="_blank">
-              🐱 GitHub
+              GitHub
             </a>
           </li>
           <li>
+            🔗{" "}
             <a href="https://www.linkedin.com/in/erikacuby" target="_blank">
-              🔗 LinkedIn
+              LinkedIn
             </a>
           </li>
         </ul>
