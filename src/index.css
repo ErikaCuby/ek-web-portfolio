@@ -63,3 +63,62 @@ a {
   background-color: var(--primary-color);
   color: white;
 }
+
+.back-link {
+  margin-top: 50px ;
+  text-align: center;
+}
+
+
+/* Shared project card styles */
+.project-card {
+  background-color: var(--card-background);
+  padding: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-color);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+/* Shared projects grid layout */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Case Study Layout */
+.case-study {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.case-header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.case-header p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.case-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+}

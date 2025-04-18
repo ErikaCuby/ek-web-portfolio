@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import developerProjects from "../data/developerProjects.json";
-import "./DeveloperCaseStudy.css";
 
 
 const DeveloperCaseStudy = () => {
@@ -20,7 +19,7 @@ const DeveloperCaseStudy = () => {
       <img src={project.fullImage} alt={project.title} className="case-image" />
 
       <div className="back-link">
-        <Link to="/developer" className="button">
+        <Link to="/developer" className="button button-secondary">
           ← Back to Developer Page
         </Link>
       </div>
