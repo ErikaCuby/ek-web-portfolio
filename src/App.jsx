@@ -2,6 +2,8 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 
 import Developer from "./pages/Developer";
 import DeveloperCaseStudy from "./pages/DeveloperCaseStudy";
@@ -28,6 +30,7 @@ function App() {
             <Route path="/developer/:slug" element={<DeveloperCaseStudy />} />
             <Route path="/illustration" element={<Illustration />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
 
           {/* Render Footer on all pages except the landing page */}

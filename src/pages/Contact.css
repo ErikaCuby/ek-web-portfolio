@@ -1,0 +1,20 @@
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.contact-links li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.contact-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
