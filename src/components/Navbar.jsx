@@ -6,17 +6,16 @@ const Navbar = ({ animated }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  const isDeveloperSection = location.pathname.includes("developer");
-  const currentSection = isDeveloperSection ? "developer" : "illustration";
-  const oppositeSection = isDeveloperSection ? "illustration" : "developer";
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  // Used to style active links manually
+  const isActive = (path) => location.pathname === path;
 
   return (
     <nav className={`navbar ${animated ? "animated" : ""}`}>
@@ -38,24 +37,36 @@ const Navbar = ({ animated }) => {
 
       <div className={`navbar-right ${isMobileMenuOpen ? "open" : ""}`}>
         <Link
-          to={`/${currentSection}`}
-          className="nav-link"
+          to="/about"
+          className={`nav-link ${isActive("/about") ? "active" : ""}`}
           onClick={closeMenu}
         >
-          Home
-        </Link>
-        <Link to="/about" className="nav-link" onClick={closeMenu}>
           About Me
         </Link>
-        <Link to="/contact" className="nav-link" onClick={closeMenu}>
+        <Link
+          to="/contact"
+          className={`nav-link ${isActive("/contact") ? "active" : ""}`}
+          onClick={closeMenu}
+        >
           Contact
         </Link>
         <Link
-          to={`/${oppositeSection}`}
-          className="nav-link"
+          to="/developer"
+          className={`nav-link ${
+            location.pathname.includes("developer") ? "active" : ""
+          }`}
           onClick={closeMenu}
         >
-          {oppositeSection.charAt(0).toUpperCase() + oppositeSection.slice(1)}
+          Developer
+        </Link>
+        <Link
+          to="/illustration"
+          className={`nav-link ${
+            location.pathname.includes("illustration") ? "active" : ""
+          }`}
+          onClick={closeMenu}
+        >
+          Illustration
         </Link>
       </div>
     </nav>
