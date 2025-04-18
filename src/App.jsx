@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import Developer from "./pages/Developer";
+import DeveloperCaseStudy from "./pages/DeveloperCaseStudy";
 import Illustration from "./pages/Illustration";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -21,6 +22,7 @@ function App() {
           <Routes location={location}>
             <Route path="/" element={<Landing />} />
             <Route path="/developer" element={<Developer />} />
+            <Route path="/developer/:slug" element={<DeveloperCaseStudy />} />
             <Route path="/illustration" element={<Illustration />} />
           </Routes>
 

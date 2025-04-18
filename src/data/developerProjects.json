@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "slug": "massage-website",
+    "title": "Massage Website",
+    "shortDescription": "Relaxing visuals + accessible layout for a local therapist",
+    "fullDescription": "Built with React and CSS modules, this website focuses on accessibility and calming visual design, perfect for wellness professionals.",
+    "thumbnail": "/images/massage-thumb.jpg",
+    "fullImage": "/images/massage-full.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "react-quiz-app",
+    "title": "React Quiz App",
+    "shortDescription": "A playful minimalist UI to test digital habits",
+    "fullDescription": "Inspired by ErikaOS aesthetics, this quiz uses React state and conditional rendering to playfully assess users' desktop habits.",
+    "thumbnail": "/images/quiz-thumb.jpg",
+    "fullImage": "/images/quiz-full.jpg"
+  },
+  {
+    "id": 3,
+    "slug": "responsive-gallery",
+    "title": "Responsive Gallery",
+    "shortDescription": "Showcase of adaptive grid systems and smooth transitions",
+    "fullDescription": "A modern gallery project that highlights CSS Grid, lazy loading, and intersection observers for a polished visual experience.",
+    "thumbnail": "/images/gallery-thumb.jpg",
+    "fullImage": "/images/gallery-full.jpg"
+  }
+]

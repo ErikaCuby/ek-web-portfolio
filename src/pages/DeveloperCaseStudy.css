@@ -1,0 +1,48 @@
+.case-study {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.case-header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.case-header p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.case-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.back-link {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}
+
+.not-found {
+  text-align: center;
+  color: red;
+  margin-top: 4rem;
+}
