@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet');
+
 @import './variables.css';
 
 /* Global reset + layout */
@@ -27,6 +29,31 @@ h1, h2, h3, h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.page-container {
+  padding: 2rem;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 /* 🔘 Buttons */

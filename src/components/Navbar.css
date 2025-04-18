@@ -13,6 +13,7 @@
 }
 
 .navbar-left .logo {
+  font-family: var(--signature-font);
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
@@ -27,7 +28,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
   font-weight: 500;
   transition: transform 0.3s ease, color 0.3s ease;
   display: inline-block;
@@ -35,7 +36,7 @@
 
 .nav-link:hover {
   transform: scale(1.2);
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .hamburger {

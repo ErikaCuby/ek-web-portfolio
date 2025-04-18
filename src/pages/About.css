@@ -1,0 +1,20 @@
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Reuses shared layout from index.css:
+   .page-container, .section, .section-heading, .section-text, .page-title
+*/
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.italic {
+  font-style: italic;
+  text-align: center;
+}
