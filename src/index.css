@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet');
 
-@import './variables.css';
+@import "./variables.css";
 
 /* Global reset + layout */
 *,
@@ -12,7 +12,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-body);
   color: var(--text-color);
   background-color: var(--background-color);
@@ -20,7 +21,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-header);
   color: var(--primary-color);
   font-weight: 600;
@@ -123,10 +127,9 @@ a {
 }
 
 .back-link {
-  margin-top: 50px ;
+  margin-top: 50px;
   text-align: center;
 }
-
 
 /* Shared project card styles */
 .project-card {
@@ -158,25 +161,116 @@ a {
 }
 
 /* Case Study Layout */
+/* ─────────────────────────────────────────────
+   📝 Shared Case Study Styles (Dev + Art)
+───────────────────────────────────────────── */
+
 .case-study {
-  padding: 2rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  font-family: var(--font-body);
+  line-height: 1.7;
 }
 
 .case-header h1 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .case-header p {
-  color: var(--text-color);
-  font-size: 1.1rem;
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 .case-image {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.case-section {
+  margin-bottom: 3rem;
+}
+
+.case-section h2 {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: white;
+  padding: 10px 10px;
+  background-color: var(--primary-color);
+  margin-bottom: 2rem;
+  border-radius: 12px;
+}
+
+.case-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.case-section ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.case-section a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.case-section a:hover {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.back-link {
+  display: inline-block;
   margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--card-background);
+}
+
+@media (max-width: 768px) {
+  .case-study {
+    padding: 3rem;
+  }
+
+  .case-header h1 {
+    font-size: 2rem;
+  }
+
+  .case-section h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .back-link {
+    display: block;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .case-image {
+    margin: 1rem 0;
+  }
 }

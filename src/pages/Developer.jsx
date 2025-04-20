@@ -23,19 +23,23 @@ const Developer = () => {
       <section className="developer-gallery">
         <h2>Featured Projects</h2>
         <div className="projects-grid">
-          {developerProjects.slice(0, 3).map((project) => (
+          {developerProjects.map((project) => (
             <Link
               to={`/developer/${project.slug}`}
               key={project.id}
               className="project-card"
             >
-              <img
-                src={project.thumbnail}
-                alt={project.title}
-                className="thumbnail"
-              />
-              <h3>{project.title}</h3>
-              <p>{project.shortDescription}</p>
+              <div className="card-image-wrapper">
+                <img
+                  src={project.thumbnail}
+                  alt={`${project.name} thumbnail`}
+                  className="thumbnail"
+                />
+              </div>
+              <div className="card-content">
+                <h3 className="project-title">{project.name}</h3>
+                <p className="project-cliff">{project.cliffhanger}</p>
+              </div>
             </Link>
           ))}
         </div>

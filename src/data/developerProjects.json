@@ -1,29 +1,242 @@
 [
   {
-    "id": 1,
-    "slug": "massage-website",
-    "title": "Massage Website",
-    "shortDescription": "Relaxing visuals + accessible layout for a local therapist",
-    "fullDescription": "Built with React and CSS modules, this website focuses on accessibility and calming visual design, perfect for wellness professionals.",
-    "thumbnail": "/images/massage-thumb.jpg",
-    "fullImage": "/images/massage-full.jpg"
+    "id": "roast-blog-react",
+    "name": "The Roast Blog",
+    "slug": "roast-blog",
+    "thumbnail": "/images/thumbnails/roast-blog-thumb.jpg",
+    "video": "/videos/roast-blog-walkthrough.mp4",
+    "cliffhanger": "An AI that roasts you, a blog that never stays quiet\u2014what could go wrong?",
+    "caseStudy": {
+      "title": "The Roast Blog: How I Built It, Broke It, and Survived",
+      "date": "April 2025",
+      "image": "/images/roast-case-study.jpg",
+      "sections": [
+        {
+          "heading": "How It Started",
+          "content": [
+            "I wanted to make a blog. Not just any blog\u2014a chatty, click-happy, chaos-fueled space where my AI (Luma) roasts me like a burnt croissant and somehow people are supposed to enjoy it. Cute, right?",
+            "It began with a sketch, a palette, and way too much confidence. Next thing I knew, I was battling React components at midnight and wondering if Netlify was ghosting me on purpose."
+          ]
+        },
+        {
+          "heading": "Why I Chose React",
+          "content": [
+            "Because I enjoy suffering efficiently.",
+            "Reusable components so I don't copy-paste like it\u2019s 2010.",
+            "Smooth routing with no full-page reloads.",
+            "Built-in support for fancy animations and future chaos.",
+            "React gave me all that. It also gave me 19 new tabs of Stack Overflow and a mild case of imposter syndrome."
+          ]
+        },
+        {
+          "heading": "Styling It Like I Meant It",
+          "content": [
+            "I used custom CSS because I like control and making my life harder in beautiful ways. Light mode uses soft pinks and warm whites. Dark mode flips into purples and moody tones.",
+            "Fonts? Playfair Display for drama. Work Sans for clarity. Hover effects? Handmade like small digital pastries."
+          ]
+        },
+        {
+          "heading": "The Build (aka, Erika vs. the Bugs)",
+          "content": [
+            "Phase 1: Everything was working. Until it wasn\u2019t.",
+            "Phase 2: Netlify gave me a blank screen because of an uppercase image name.",
+            "Phase 3: React Router tested me. I passed. Barely.",
+            "Phase 4: I styled the 'Show More' button like it was auditioning for a skincare commercial."
+          ]
+        },
+        {
+          "heading": "What I\u2019m Proud Of",
+          "content": [
+            "Dark/light mode toggle that feels like flipping moods.",
+            "A related-posts carousel with a smooth infinite loop.",
+            "Meta tag updates for each blog post (SEO gets love too).",
+            "A custom 404 page where my AI melts down instead of me."
+          ]
+        },
+        {
+          "heading": "What Tried to Kill Me",
+          "content": [
+            "Responsive CSS across devices (still haunts my dreams).",
+            "Netlify playing hot-and-cold with every deploy.",
+            "Random routing bugs that only appear during demos."
+          ]
+        },
+        {
+          "heading": "What I\u2019d Do Differently (Now That I\u2019m Wiser)",
+          "content": [
+            "Use Markdown or a CMS instead of one giant JS file.",
+            "Set up preview builds before pushing to Netlify.",
+            "Maybe... maybe try Tailwind (if I ever feel brave)."
+          ]
+        },
+        {
+          "heading": "Links",
+          "content": [
+            "\ud83d\udd17 Live Site: https://roast-blog-live.netlify.app",
+            "\ud83d\udcbb GitHub Repo: https://github.com/ErikaCuby/the-roast-blog-react"
+          ]
+        }
+      ]
+    }
   },
   {
-    "id": 2,
-    "slug": "react-quiz-app",
-    "title": "React Quiz App",
-    "shortDescription": "A playful minimalist UI to test digital habits",
-    "fullDescription": "Inspired by ErikaOS aesthetics, this quiz uses React state and conditional rendering to playfully assess users' desktop habits.",
-    "thumbnail": "/images/quiz-thumb.jpg",
-    "fullImage": "/images/quiz-full.jpg"
+    "id": "roast-blog-react",
+    "name": "The Roast Blog",
+    "slug": "roast-blog",
+    "thumbnail": "/images/thumbnails/roast-blog-thumb.jpg",
+    "video": "/videos/roast-blog-walkthrough.mp4",
+    "cliffhanger": "An AI that roasts you, a blog that never stays quiet\u2014what could go wrong?",
+    "caseStudy": {
+      "title": "The Roast Blog: How I Built It, Broke It, and Survived",
+      "date": "April 2025",
+      "image": "/images/roast-case-study.jpg",
+      "sections": [
+        {
+          "heading": "How It Started",
+          "content": [
+            "I wanted to make a blog. Not just any blog\u2014a chatty, click-happy, chaos-fueled space where my AI (Luma) roasts me like a burnt croissant and somehow people are supposed to enjoy it. Cute, right?",
+            "It began with a sketch, a palette, and way too much confidence. Next thing I knew, I was battling React components at midnight and wondering if Netlify was ghosting me on purpose."
+          ]
+        },
+        {
+          "heading": "Why I Chose React",
+          "content": [
+            "Because I enjoy suffering efficiently.",
+            "Reusable components so I don't copy-paste like it\u2019s 2010.",
+            "Smooth routing with no full-page reloads.",
+            "Built-in support for fancy animations and future chaos.",
+            "React gave me all that. It also gave me 19 new tabs of Stack Overflow and a mild case of imposter syndrome."
+          ]
+        },
+        {
+          "heading": "Styling It Like I Meant It",
+          "content": [
+            "I used custom CSS because I like control and making my life harder in beautiful ways. Light mode uses soft pinks and warm whites. Dark mode flips into purples and moody tones.",
+            "Fonts? Playfair Display for drama. Work Sans for clarity. Hover effects? Handmade like small digital pastries."
+          ]
+        },
+        {
+          "heading": "The Build (aka, Erika vs. the Bugs)",
+          "content": [
+            "Phase 1: Everything was working. Until it wasn\u2019t.",
+            "Phase 2: Netlify gave me a blank screen because of an uppercase image name.",
+            "Phase 3: React Router tested me. I passed. Barely.",
+            "Phase 4: I styled the 'Show More' button like it was auditioning for a skincare commercial."
+          ]
+        },
+        {
+          "heading": "What I\u2019m Proud Of",
+          "content": [
+            "Dark/light mode toggle that feels like flipping moods.",
+            "A related-posts carousel with a smooth infinite loop.",
+            "Meta tag updates for each blog post (SEO gets love too).",
+            "A custom 404 page where my AI melts down instead of me."
+          ]
+        },
+        {
+          "heading": "What Tried to Kill Me",
+          "content": [
+            "Responsive CSS across devices (still haunts my dreams).",
+            "Netlify playing hot-and-cold with every deploy.",
+            "Random routing bugs that only appear during demos."
+          ]
+        },
+        {
+          "heading": "What I\u2019d Do Differently (Now That I\u2019m Wiser)",
+          "content": [
+            "Use Markdown or a CMS instead of one giant JS file.",
+            "Set up preview builds before pushing to Netlify.",
+            "Maybe... maybe try Tailwind (if I ever feel brave)."
+          ]
+        },
+        {
+          "heading": "Links",
+          "content": [
+            "\ud83d\udd17 Live Site: https://roast-blog-live.netlify.app",
+            "\ud83d\udcbb GitHub Repo: https://github.com/ErikaCuby/the-roast-blog-react"
+          ]
+        }
+      ]
+    }
   },
   {
-    "id": 3,
-    "slug": "responsive-gallery",
-    "title": "Responsive Gallery",
-    "shortDescription": "Showcase of adaptive grid systems and smooth transitions",
-    "fullDescription": "A modern gallery project that highlights CSS Grid, lazy loading, and intersection observers for a polished visual experience.",
-    "thumbnail": "/images/gallery-thumb.jpg",
-    "fullImage": "/images/gallery-full.jpg"
+    "id": "roast-blog-react",
+    "name": "The Roast Blog",
+    "slug": "roast-blog",
+    "thumbnail": "/images/thumbnails/roast-blog-thumb.jpg",
+    "video": "/videos/roast-blog-walkthrough.mp4",
+    "cliffhanger": "An AI that roasts you, a blog that never stays quiet\u2014what could go wrong?",
+    "caseStudy": {
+      "title": "The Roast Blog: How I Built It, Broke It, and Survived",
+      "date": "April 2025",
+      "image": "/images/roast-case-study.jpg",
+      "sections": [
+        {
+          "heading": "How It Started",
+          "content": [
+            "I wanted to make a blog. Not just any blog\u2014a chatty, click-happy, chaos-fueled space where my AI (Luma) roasts me like a burnt croissant and somehow people are supposed to enjoy it. Cute, right?",
+            "It began with a sketch, a palette, and way too much confidence. Next thing I knew, I was battling React components at midnight and wondering if Netlify was ghosting me on purpose."
+          ]
+        },
+        {
+          "heading": "Why I Chose React",
+          "content": [
+            "Because I enjoy suffering efficiently.",
+            "Reusable components so I don't copy-paste like it\u2019s 2010.",
+            "Smooth routing with no full-page reloads.",
+            "Built-in support for fancy animations and future chaos.",
+            "React gave me all that. It also gave me 19 new tabs of Stack Overflow and a mild case of imposter syndrome."
+          ]
+        },
+        {
+          "heading": "Styling It Like I Meant It",
+          "content": [
+            "I used custom CSS because I like control and making my life harder in beautiful ways. Light mode uses soft pinks and warm whites. Dark mode flips into purples and moody tones.",
+            "Fonts? Playfair Display for drama. Work Sans for clarity. Hover effects? Handmade like small digital pastries."
+          ]
+        },
+        {
+          "heading": "The Build (aka, Erika vs. the Bugs)",
+          "content": [
+            "Phase 1: Everything was working. Until it wasn\u2019t.",
+            "Phase 2: Netlify gave me a blank screen because of an uppercase image name.",
+            "Phase 3: React Router tested me. I passed. Barely.",
+            "Phase 4: I styled the 'Show More' button like it was auditioning for a skincare commercial."
+          ]
+        },
+        {
+          "heading": "What I\u2019m Proud Of",
+          "content": [
+            "Dark/light mode toggle that feels like flipping moods.",
+            "A related-posts carousel with a smooth infinite loop.",
+            "Meta tag updates for each blog post (SEO gets love too).",
+            "A custom 404 page where my AI melts down instead of me."
+          ]
+        },
+        {
+          "heading": "What Tried to Kill Me",
+          "content": [
+            "Responsive CSS across devices (still haunts my dreams).",
+            "Netlify playing hot-and-cold with every deploy.",
+            "Random routing bugs that only appear during demos."
+          ]
+        },
+        {
+          "heading": "What I\u2019d Do Differently (Now That I\u2019m Wiser)",
+          "content": [
+            "Use Markdown or a CMS instead of one giant JS file.",
+            "Set up preview builds before pushing to Netlify.",
+            "Maybe... maybe try Tailwind (if I ever feel brave)."
+          ]
+        },
+        {
+          "heading": "Links",
+          "content": [
+            "\ud83d\udd17 Live Site: https://roast-blog-live.netlify.app",
+            "\ud83d\udcbb GitHub Repo: https://github.com/ErikaCuby/the-roast-blog-react"
+          ]
+        }
+      ]
+    }
   }
 ]
