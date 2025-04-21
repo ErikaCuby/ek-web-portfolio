@@ -1,19 +1,46 @@
 .footer {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  text-align: center;
   padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
   font-size: 0.9rem;
-  border-top: 1px solid var(--shadow);
-  margin-top: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  color: #555;
+  border-top: 1px solid #eaeaea;
 }
 
-/* Optional: Responsive font sizing */
-@media (max-width: 768px) {
-  .footer {
-    font-size: 0.8rem;
-    padding: 1.5rem 1rem;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color); /* LinkedIn Blue */
+animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

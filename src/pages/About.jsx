@@ -15,10 +15,10 @@ const About = () => {
       <section className="section">
         <h2 className="section-heading">What I love doing</h2>
         <ul className="section-list">
-          <li>💻 Building responsive, user-friendly web interfaces</li>
-          <li>🎨 Creating illustrations and digital visuals</li>
-          <li>🧠 Mixing logic with storytelling</li>
-          <li>☕ Sipping cappuccinos while pushing pixels</li>
+          <li>Building responsive, user-friendly web interfaces</li>
+          <li>Creating illustrations and digital visuals</li>
+          <li>Mixing logic with storytelling</li>
+          <li>Sipping cappuccinos while pushing pixels</li>
         </ul>
       </section>
 

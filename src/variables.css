@@ -1,8 +1,8 @@
 :root {
   /* 🎨 Colors */
-  --primary-color: #20425f;
-  --secondary-color: #4c4c4c;
-  --accent-color : #375359;
+  --primary-color: #202121;
+  --secondary-color: #656363;
+  --accent-color : #05fb42;
   --bg-color: #fdfaf6;
   --card-background: #ffffff; /* background color for cards */
   --text-color: #2a2a2a;
@@ -14,7 +14,7 @@
 
 
   /* 🖋 Typography */
-  --font-header: 'Libre Baskerville', serif;
+  --font-header: 'Work Sans', sans-serif; /* previously: 'Libre Baskerville', serif; */
   --font-body: 'Work Sans', sans-serif;
 --signature-font: 'Great Vibes', cursive;
 }
