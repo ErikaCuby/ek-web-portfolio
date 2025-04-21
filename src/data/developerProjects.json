@@ -1,229 +1,238 @@
 [
-{
-  "id": "portfolio-site",
-  "name": "My Web Portfolio",
-  "slug": "portfolio",
-  "thumbnail": "/images/thumbnails/portfolio-thumb.jpg",
-  "video": "/videos/portfolio-walkthrough.mp4",
-  "cliffhanger": "Two identities. One portfolio. And a developer who’s both the builder and the chaos.",
-  "caseStudy": {
-    "title": "How I Designed, Debugged, and Debugged Again",
-    "date": "April 2025",
-    "image": "/images/portfolio-case-study.jpg",
-    "sections": [
-      {
-        "heading": "The Idea",
-        "content": [
-          "I wanted my portfolio to feel like *me* — not just a showcase of code, but an experience. I wasn’t building a resume; I was building a living space for two identities: Erika the front-end dev and Erika the illustrator.",
-          "Both sides needed their own vibe, their own voice, and their own entrance. That’s how the idea of a split identity site was born — with a landing page that lets users choose which Erika they want to meet."
-        ]
-      },
-      {
-        "heading": "The Build",
-        "content": [
-          "I chose React with Vite for performance and flexibility. Routing? React Router. Styling? Custom CSS, because Tailwind and I have creative differences.",
-          "I structured everything with reusable components and shared variables for colors, typography, shadows, and spacing — the goal was cohesion without sacrificing personality."
-        ]
-      },
-      {
-        "heading": "The Struggles",
-        "content": [
-          "State vs. sanity: toggling themes, routing animations, conditional rendering. My brain was a multi-tabbed mess.",
-          "CSS scope: balancing what belongs in index.css and what deserves a module — I restructured that mess at least three times.",
-          "Dynamic galleries with JSON-powered routing and styling… sounded easy, wasn’t.",
-          "Netlify image-case bugs. A rite of passage.",
-          "And of course: keeping the developer and illustrator halves consistent *without* making them boring clones of each other."
-        ]
-      },
-      {
-        "heading": "The Thought Process",
-        "content": [
-          "My brain works in dualities — logical and expressive, clean and chaotic. This portfolio is built to reflect that.",
-          "Every section is mapped like a journey: You land → You choose your Erika → You explore → You connect.",
-          "Instead of a single long scroll, I opted for clean page routes — like a dev’s toolbox, but wrapped in soft tones and self-aware design."
-        ]
-      },
-      {
-        "heading": "What I’m Proud Of",
-        "content": [
-          "The landing experience — picking your Erika with a circle feels like a mood-based adventure.",
-          "Dynamic project pages powered by JSON and styled through shared CSS (yes, finally clean and scalable).",
-          "A gallery that lets me add or remove projects without touching the layout logic.",
-          "Using only what I *need* — no bloated libraries, just custom, focused code.",
-          "And honestly? That it feels like mine — not a template, not a starter kit. It’s personal."
-        ]
-      },
-      {
-        "heading": "What Tried to Kill Me",
-        "content": [
-          "Uppercase image file names and Netlify being dramatic about them.",
-          "Naming conventions in shared vs. scoped CSS. It's like arguing with yourself.",
-          "Conditionally rendering layout logic based on dev vs. art sections — clean in theory, messy in practice."
-        ]
-      },
-      {
-        "heading": "What I’d Do Differently",
-        "content": [
-          "Start with a CMS or markdown setup for case studies. That giant JS object won't age well.",
-          "Decide on CSS structure earlier. Refactoring mid-way? Pain.",
-          "Maybe — maybe — try Tailwind for the utility class joyride (but only if I'm feeling brave)."
-        ]
-      },
-      {
-        "heading": "Links",
-        "content": [
-          "🔗 Live Site: https://erikacuby-portfolio.netlify.app",
-          "💻 GitHub Repo: https://github.com/ErikaCuby/ek-web-portfolio"
-        ]
-      }
-    ]
-  }
-},
   {
-    "id": "roast-blog-react",
-    "name": "The Roast Blog",
-    "slug": "roast-blog",
-    "thumbnail": "/images/thumbnails/roast-blog-thumb.jpg",
-    "video": "/videos/roast-blog-walkthrough.mp4",
-    "cliffhanger": "An AI that roasts you, a blog that never stays quiet\u2014what could go wrong?",
+    "id": "portfolio-site",
+    "name": "My Web Portfolio",
+    "slug": "portfolio",
+    "thumbnail": "/images/thumbnails/portfolio-thumb.jpg",
+    "video": "/videos/portfolio-walkthrough.mp4",
+    "cliffhanger": "Two identities. One portfolio. And a developer who’s both the builder and the chaos.",
     "caseStudy": {
-      "title": "The Roast Blog: How I Built It, Broke It, and Survived",
+      "title": "How I Designed, Debugged, and Debugged Again",
       "date": "April 2025",
-      "image": "/images/roast-case-study.jpg",
+      "heroImage": "/images/portfolio-case-study.jpg",
       "sections": [
         {
-          "heading": "How It Started",
+          "type": "imageText",
+          "heading": "The Idea",
+          "layout": "image-left",
+          "image": "/images/case/idea-sketch.jpg",
           "content": [
-            "I wanted to make a blog. Not just any blog\u2014a chatty, click-happy, chaos-fueled space where my AI (Luma) roasts me like a burnt croissant and somehow people are supposed to enjoy it. Cute, right?",
-            "It began with a sketch, a palette, and way too much confidence. Next thing I knew, I was battling React components at midnight and wondering if Netlify was ghosting me on purpose."
+            "I wanted my portfolio to feel like *me* — not just a showcase of code, but an experience.",
+            "Both sides needed their own vibe, their own voice, and their own entrance. That’s how the idea of a split identity site was born."
           ]
         },
         {
-          "heading": "Why I Chose React",
+          "type": "gallery",
+          "heading": "The Build",
+          "images": [
+            {
+              "src": "/images/case/build-1.png",
+              "caption": "Landing page with animated circle buttons."
+            },
+            {
+              "src": "/images/case/build-2.png",
+              "caption": "Shared navbar using CSS variables."
+            }
+          ],
           "content": [
-            "Because I enjoy suffering efficiently.",
-            "Reusable components so I don't copy-paste like it\u2019s 2010.",
-            "Smooth routing with no full-page reloads.",
-            "Built-in support for fancy animations and future chaos.",
-            "React gave me all that. It also gave me 19 new tabs of Stack Overflow and a mild case of imposter syndrome."
+            "React with Vite gave me speed. Routing? React Router. Styling? All mine.",
+            "I created reusable components and centralized design tokens in `variables.css`."
           ]
         },
         {
-          "heading": "Styling It Like I Meant It",
+          "type": "imageText",
+          "heading": "The Struggles",
+          "layout": "image-right",
+          "image": "/images/case/struggles-code.png",
           "content": [
-            "I used custom CSS because I like control and making my life harder in beautiful ways. Light mode uses soft pinks and warm whites. Dark mode flips into purples and moody tones.",
-            "Fonts? Playfair Display for drama. Work Sans for clarity. Hover effects? Handmade like small digital pastries."
+            "Theme toggles broke everything for a day. Routing transitions haunted my sleep.",
+            "Scope wars between index.css and CSS modules? Brutal.",
+            "And the JSON gallery? Not as friendly as it sounds."
           ]
         },
         {
-          "heading": "The Build (aka, Erika vs. the Bugs)",
-          "content": [
-            "Phase 1: Everything was working. Until it wasn\u2019t.",
-            "Phase 2: Netlify gave me a blank screen because of an uppercase image name.",
-            "Phase 3: React Router tested me. I passed. Barely.",
-            "Phase 4: I styled the 'Show More' button like it was auditioning for a skincare commercial."
+          "type": "features",
+          "heading": "Notable Features",
+          "items": [
+            "Dual-identity animated landing",
+            "JSON-powered dynamic gallery",
+            "CSS variable-based theme system",
+            "Responsive layout with grid/flex harmony"
           ]
         },
         {
-          "heading": "What I\u2019m Proud Of",
+          "type": "reflection",
+          "heading": "Final Thoughts",
           "content": [
-            "Dark/light mode toggle that feels like flipping moods.",
-            "A related-posts carousel with a smooth infinite loop.",
-            "Meta tag updates for each blog post (SEO gets love too).",
-            "A custom 404 page where my AI melts down instead of me."
-          ]
-        },
-        {
-          "heading": "What Tried to Kill Me",
-          "content": [
-            "Responsive CSS across devices (still haunts my dreams).",
-            "Netlify playing hot-and-cold with every deploy.",
-            "Random routing bugs that only appear during demos."
-          ]
-        },
-        {
-          "heading": "What I\u2019d Do Differently (Now That I\u2019m Wiser)",
-          "content": [
-            "Use Markdown or a CMS instead of one giant JS file.",
-            "Set up preview builds before pushing to Netlify.",
-            "Maybe... maybe try Tailwind (if I ever feel brave)."
-          ]
-        },
-        {
-          "heading": "Links",
-          "content": [
-            "\ud83d\udd17 Live Site: https://roast-blog-live.netlify.app",
-            "\ud83d\udcbb GitHub Repo: https://github.com/ErikaCuby/the-roast-blog-react"
+            "This portfolio taught me a lot about building with intention and personality. It’s not just a showcase, it’s an invitation to explore who I am as a creator."
           ]
         }
       ]
     }
   },
+{
+  "id": "roast-blog",
+  "name": "The Luma & Erika Roast Blog",
+  "slug": "roast-blog",
+  "thumbnail": "/images/thumbnails/roast-blog-thumb.jpg",
+  "video": "/videos/roast-blog-scroll.mp4",
+  "cliffhanger": "An interactive blog where I get publicly roasted by an AI I coded myself. Learning React was never this personal.",
+  "caseStudy": {
+    "title": "How I Built a Blog That Roasts Me Back",
+    "date": "March 2025",
+    "heroImage": "/images/case/roast-hero.png",
+    "sections": [
+      {
+        "type": "imageText",
+        "heading": "Why I Built This",
+        "layout": "image-left",
+        "image": "/images/case/roast-blog-home.png",
+        "content": [
+          "I didn’t want another boring portfolio with placeholder lorem ipsum and vanilla cards. I wanted something weird, real, and slightly chaotic — like me.",
+          "So I built a blog powered by React, where an AI called Luma roasts me while I write code, reflect on life, and attempt to stay caffeinated. This was my first real React project where I went beyond tutorials into ‘oh wow this is hard’ territory."
+        ]
+      },
+      {
+        "type": "gallery",
+        "heading": "What It Does",
+        "images": [
+          {
+            "src": "/images/case/roast-post-1.png",
+            "caption": "Dynamic post layout with illustration, commentary, and my wounded dignity."
+          },
+          {
+            "src": "/images/case/roast-post-2.png",
+            "caption": "Luma’s Notes panel that floats, collapses, and occasionally insults me."
+          }
+        ],
+        "content": [
+          "Each blog post is loaded dynamically from JSON. Posts are structured with headlines, illustrations, my commentary, and Luma’s ever-present sass.",
+          "There’s a ‘Show More’ button, a collapsible floating sidebar, and randomized quotes that react to the page you’re on. Yes, it’s dramatic. Yes, it’s responsive."
+        ]
+      },
+      {
+        "type": "imageText",
+        "heading": "Dev Process (aka: crying over useEffect)",
+        "layout": "image-right",
+        "image": "/images/case/dev-struggles.png",
+        "content": [
+          "I built everything using React (no Vite), styled with custom CSS based on my soft beige/dusty pink color palette.",
+          "Routing was handled with React Router. I used Framer Motion for animations, FontAwesome for icons, and wrote every bit of layout and logic by hand.",
+          "The randomized, non-repeating Luma quotes? That logic came from my brain — Luma just wrote the actual code. I had the vision, she had the keyboard. That’s teamwork (or emotional damage)."
+        ]
+      },
+      {
+        "type": "features",
+        "heading": "Features",
+        "items": [
+          "Dynamic blog post rendering from JSON",
+          "Route-aware Luma quotes (changes depending on page)",
+          "Show More button to expand post commentary",
+          "Floating Luma’s Notes sidebar (collapsible & reactive)",
+          "Responsive layout for all screen sizes",
+          "Framer Motion animations",
+          "Randomized, non-repeating AI quote system"
+        ]
+      },
+      {
+        "type": "imageText",
+        "heading": "Deploying to Netlify (aka: digital betrayal)",
+        "layout": "image-left",
+        "image": "/images/case/netlify-fail.png",
+        "content": [
+          "Netlify build failures became my personal villain arc. ESLint and CI=true errors took me down more than once.",
+          "Every deploy was like rolling a dice. One missing dependency or a forgotten quote bracket, and the whole thing imploded.",
+          "I fixed it all eventually by refactoring state logic, rewriting parts of the quote system, and breathing deeply through the pain."
+        ]
+      },
+      {
+        "type": "reflection",
+        "heading": "Final Thoughts",
+        "content": [
+          "This project wasn’t just about React — it was about building something that felt like me: funny, introspective, kind of roasted, and maybe a little too beige.",
+          "I learned more about frontend logic, routing, and debugging than I ever expected — and I’m proud I stuck with it even when Luma got snarky and Netlify betrayed me.",
+          "If you’re reading this and you’ve ever cried over a hook dependency warning: solidarity, friend. We’re doing great."
+        ]
+      }
+    ]
+  }
+}
+
+
+,
   {
-    "id": "react-dictionary",
-    "name": "React Dictionary",
-    "slug": "react-dictionary",
-    "thumbnail": "/images/thumbnails/react-dictionary-thumb.jpg",
-    "video": "/videos/react-dictionary-demo.mp4",
-    "cliffhanger": "A dictionary app that speaks and shows you pictures—because reading definitions is so last season.",
+    "id": "dictionary-app",
+    "name": "React Dictionary App",
+    "slug": "dictionary-app",
+    "thumbnail": "/images/thumbnails/dictionary-thumb.jpg",
+    "video": null,
+    "cliffhanger": "Built a dictionary using React. Now I finally know what 'asynchronous' means — and how to scream into a console.",
     "caseStudy": {
-      "title": "React Dictionary: The App That Talks Back",
-      "date": "April 2025",
-      "image": "/images/react-dictionary-case-study.jpg",
+      "title": "My First API Project: A Dictionary That Didn’t Laugh at My Typos",
+      "date": "January 2024",
+      "heroImage": "/images/case/dictionary-hero.png",
       "sections": [
         {
-          "heading": "The Spark",
+          "type": "imageText",
+          "heading": "Why I Built This",
+          "layout": "image-left",
+          "image": "/images/case/dictionary-search.png",
           "content": [
-            "I thought, 'Why not build a dictionary app?' Simple, right? Just fetch a word and display its meaning. But then I thought, 'Let's make it talk and show pictures too!' Because who doesn't want a dictionary that does everything except make coffee?"
+            "This was my first React project using a real external API, and I wanted to build something small but useful — a dictionary sounded perfect.",
+            "Also: I kept googling things like 'polymorphism' and figured it was time to have a dedicated place to look smart while learning."
           ]
         },
         {
-          "heading": "The Build",
+          "type": "gallery",
+          "heading": "What It Does",
+          "images": [
+            {
+              "src": "/images/case/dictionary-home.png",
+              "caption": "Simple UI for word lookup using the Dictionary API."
+            },
+            {
+              "src": "/images/case/dictionary-error.png",
+              "caption": "If your word doesn’t exist, the app lets you down gently."
+            }
+          ],
           "content": [
-            "Started with React—because I love componentizing my life. Added Axios for API calls, and styled it with CSS to make it look less like a 90s website.",
-            "Integrated two APIs: one for definitions and another for images. Because text is boring without visuals, and I like to complicate things."
+            "You can search any word, and it will fetch definitions, examples, and part of speech. All data comes from a public Dictionary API.",
+            "If you enter nonsense or typo something (which I did a lot), the app shows a clean error message instead of breaking."
           ]
         },
         {
-          "heading": "The Struggles",
+          "type": "imageText",
+          "heading": "What I Learned",
+          "layout": "image-right",
+          "image": "/images/case/dictionary-react.png",
           "content": [
-            "CORS errors: the internet's way of saying 'You shall not pass!'",
-            "Handling undefined responses when the API decided a word wasn't worthy of a definition.",
-            "Making the app responsive so it doesn't break on every screen size known to humanity."
+            "I learned the basics of working with `fetch()` and handling asynchronous data in React.",
+            "Also discovered the joy of conditional rendering — especially when the API fails or returns nothing.",
+            "Let’s just say this project taught me how to console.log like a champ."
           ]
         },
         {
-          "heading": "What I'm Proud Of",
-          "content": [
-            "Successfully integrated two APIs without the app crashing every five seconds.",
-            "Clean UI that doesn't make your eyes bleed.",
-            "A search feature that actually works—and fast!"
+          "type": "features",
+          "heading": "Features",
+          "items": [
+            "Word lookup using public Dictionary API",
+            "Multiple definitions per word",
+            "Basic error handling",
+            "Responsive UI (mobile-friendly)",
+            "Clean layout with minimalist styling",
+            "Built entirely with React and custom CSS"
           ]
         },
         {
-          "heading": "What Tried to Kill Me",
+          "type": "reflection",
+          "heading": "Final Thoughts",
           "content": [
-            "API rate limits: because apparently, free doesn't mean unlimited.",
-            "Debugging asynchronous calls that refused to behave.",
-            "Styling the audio player to not look like it time-traveled from 2005."
-          ]
-        },
-        {
-          "heading": "What I'd Do Differently",
-          "content": [
-            "Add a loading spinner so users know the app hasn't died.",
-            "Implement error messages that are actually helpful.",
-            "Maybe use TypeScript to catch bugs before they catch me."
-          ]
-        },
-        {
-          "heading": "Links",
-          "content": [
-            "🔗 Live Site: https://lexicone.netlify.app",
-            "💻 GitHub Repo: https://github.com/ErikaCuby/react-dictionary"
+            "It might be a small app, but it helped me understand the full cycle of making an actual working frontend — from idea, to API, to deployment.",
+            "This was one of the first projects that made me feel like a real developer — even if the words were smarter than me."
           ]
         }
       ]
     }
   }
+
 ]
