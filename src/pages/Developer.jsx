@@ -10,7 +10,7 @@ const Developer = () => {
       {/* ✅ Use string classNames */}
       {/* Intro Section */}
       <section className="developer-intro">
-        <h1>Hello, I’m Erika 👩‍💻</h1>
+        <h1>Hello, I’m Erika</h1>
         <p>
           I’m a passionate front-end developer who blends code and creativity. I
           specialize in building elegant, user-friendly interfaces using tools

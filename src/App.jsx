@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
-import About from "./pages/About";
+import AboutContactPage from "./pages/AboutContactPage";
 import Contact from "./pages/Contact";
 
 
@@ -29,7 +29,7 @@ function App() {
             <Route path="/developer" element={<Developer />} />
             <Route path="/developer/:slug" element={<DeveloperCaseStudy />} />
             <Route path="/illustration" element={<Illustration />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<AboutContactPage />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
 

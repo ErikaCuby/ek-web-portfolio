@@ -11,10 +11,8 @@
 
 .developer-intro h1 {
   font-size: 2.5rem;
-  color: var(--primary-color);
 }
 
 .developer-intro p {
   font-size: 1.2rem;
-  color: var(--text-color);
 }
