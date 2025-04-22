@@ -10,6 +10,8 @@ import Illustration from "./pages/Illustration";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageWrapper from "./components/PageWrapper";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       <PageWrapper key={location.pathname}>
+        <ScrollToTop />
         <>
           {/* Render Navbar on all pages except the landing page */}
           {!isLandingPage && <Navbar />}

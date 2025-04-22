@@ -45,6 +45,7 @@ const Navbar = ({ animated }) => {
         className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
         onClick={toggleMenu}
       >
+        {/* these 3 spans are used to create the hamburger icon animation to X */}
         <span></span>
         <span></span>
         <span></span>
