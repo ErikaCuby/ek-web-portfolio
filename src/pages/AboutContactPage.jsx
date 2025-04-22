@@ -149,7 +149,19 @@ const AboutContactPage = () => {
             <FaGithub />
           </a>
         </div>
-        <form className="contact-form">
+        <form
+          className="contact-form"
+          action="https://formspree.io/f/mldbedkz"
+          method="POST"
+        >
+          {/* 💬 Anti-bot and redirect magic */}
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://yourdomain.com/thank-you"
+          />
+
           <input type="text" name="name" placeholder="Name" required />
           <input type="email" name="email" placeholder="Email" required />
           <textarea name="message" placeholder="Message" required></textarea>
