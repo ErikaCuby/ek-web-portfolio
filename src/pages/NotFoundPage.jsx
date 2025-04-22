@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ThankYouPage.css";
+import "./ThankYouNotFound.css";
+
 
 const NotFoundPage = () => {
   return (
-    <div className="thank-you-page">
-      <div className="thank-you-container">
+    <div className="thank-you-not-found-page">
+      <div className="thank-you-not-found-container">
         <h1>Oops. Page not found</h1>
         <p>
           The page you’re looking for doesn’t exist — or maybe it’s just hiding

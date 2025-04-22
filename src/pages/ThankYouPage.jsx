@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./ThankYouPage.css";
+import "./ThankYouNotFound.css";
 
 const ThankYouPage = () => {
   return (
-    <div className="thank-you-page">
-      <div className="thank-you-container">
-        <h1>Thank you for your message 💌</h1>
+    <div className="thank-you-not-found-page">
+      <div className="thank-you-not-found-container">
+        <h1>Thank you for your message</h1>
         <p>
           And more importantly... thank you for your trust. Your words just
           landed in my inbox, and I truly appreciate you reaching out.
