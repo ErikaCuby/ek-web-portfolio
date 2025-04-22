@@ -2,8 +2,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Landing from "./pages/Landing";
 import AboutContactPage from "./pages/AboutContactPage";
-
-
 import Developer from "./pages/Developer";
 import DeveloperCaseStudy from "./pages/DeveloperCaseStudy";
 import Illustration from "./pages/Illustration";
@@ -11,6 +9,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageWrapper from "./components/PageWrapper";
 import ScrollToTop from "./components/ScrollToTop";
+import ThankYouPage from "./pages/ThankYouPage";
+
 
 
 
@@ -32,6 +32,7 @@ function App() {
             <Route path="/developer/:slug" element={<DeveloperCaseStudy />} />
             <Route path="/illustration" element={<Illustration />} />
             <Route path="/about" element={<AboutContactPage />} />
+            <Route path="/thank-you" element={<ThankYouPage />} />
           </Routes>
 
           {/* Render Footer on all pages except the landing page */}
