@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./AboutContactPage.css";
 
 const AboutContactPage = () => {
+  useEffect(() => {
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      const targetId = hash.replace("#", "");
+      if (targetId) {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          setTimeout(() => {
+            const offset = -80; // Adjust this if your navbar is a different height
+            const elementPosition =
+              targetElement.getBoundingClientRect().top +
+              window.scrollY +
+              offset;
+            window.scrollTo({ top: elementPosition, behavior: "smooth" });
+          }, 100);
+        }
+      }
+    };
+
+    scrollToHash();
+    window.addEventListener("hashchange", scrollToHash);
+    return () => window.removeEventListener("hashchange", scrollToHash);
+  }, []);
+
   return (
-    <div className="about-contact-page">
+    <div className="about-contact-page" id="intro">
       <section className="hero">
         <div className="hero-image" />
         <div className="hero-intro">
@@ -19,10 +43,10 @@ const AboutContactPage = () => {
       <section className="intro">
         <p>
           Hi, I’m Erika. Front-end developer. Illustrator. And someone who runs
-          marathons on purpose. Not for the medals (they are cool though). Not for the wellness
-          aesthetic. I do it because it’s the only time my brain shuts up and
-          lets me daydream… until kilometer 32, when I start questioning
-          everything, including my shoe choices and life path.
+          marathons on purpose. Not for the medals (they are cool though). Not
+          for the wellness aesthetic. I do it because it’s the only time my
+          brain shuts up and lets me daydream… until kilometer 32, when I start
+          questioning everything, including my shoe choices and life path.
         </p>
 
         <p>
@@ -58,8 +82,10 @@ const AboutContactPage = () => {
         <p>
           My world lives somewhere between design grids, running shoes, and 2AM
           code that “definitely just needs a few tweaks.” Whether it’s pixels,
-          pen strokes, or pacing, I finish what I start. With slightly smudged
-          mascara and very dramatic pride.
+          pen strokes, or pacing, I finish what I start — usually with smudged
+          mascara and dramatic pride. If you’ve made it this far, I’m guessing
+          we’d work well together. So say hi. Let’s build something weird,
+          smart, beautiful… and maybe a little sweaty.
         </p>
       </section>
 
@@ -102,7 +128,7 @@ const AboutContactPage = () => {
         </div>
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2>Contact</h2>
         <p>Let's collaborate, caffeinate, or code together.</p>
         <div className="social-links">

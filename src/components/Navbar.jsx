@@ -1,73 +1,96 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = ({ animated }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
-  const closeMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  const closeMenu = () => setIsMobileMenuOpen(false);
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  // Used to style active links manually
   const isActive = (path) => location.pathname === path;
+
+  const handleScrollNav = (sectionId) => {
+    if (location.pathname !== "/about") {
+      navigate(`/about#${sectionId}`);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        const offset = -80;
+        const elementPosition =
+          el.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top: elementPosition, behavior: "smooth" });
+      }
+    }
+    closeMenu();
+  };
 
   return (
     <nav className={`navbar ${animated ? "animated" : ""}`}>
       <div className="navbar-left">
-        <Link to="/" className="logo" onClick={closeMenu}>
+        <span
+          className="logo"
+          onClick={() => {
+            navigate("/");
+            closeMenu();
+          }}
+        >
           Erika Cuby
-        </Link>
+        </span>
       </div>
 
       <div
         className={`hamburger ${isMobileMenuOpen ? "open" : ""}`}
         onClick={toggleMenu}
       >
-        {/* these 3 spans are used to create the hamburger icon animation to X */}
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       <div className={`navbar-right ${isMobileMenuOpen ? "open" : ""}`}>
-        <Link
-          to="/about"
-          className={`nav-link ${isActive("/about") ? "active" : ""}`}
-          onClick={closeMenu}
+        <span
+          className={`nav-link ${
+            location.pathname === "/about" ? "active" : ""
+          }`}
+          onClick={() => handleScrollNav("intro")}
         >
           About Me
-        </Link>
-        <Link
-          to="/contact"
-          className={`nav-link ${isActive("/contact") ? "active" : ""}`}
-          onClick={closeMenu}
+        </span>
+        <span
+          className={`nav-link ${
+            location.pathname === "/about" && location.hash === "#contact"
+              ? "active"
+              : ""
+          }`}
+          onClick={() => handleScrollNav("contact")}
         >
           Contact
-        </Link>
-        <Link
-          to="/developer"
+        </span>
+        <span
           className={`nav-link ${
             location.pathname.includes("developer") ? "active" : ""
           }`}
-          onClick={closeMenu}
+          onClick={() => {
+            navigate("/developer");
+            closeMenu();
+          }}
         >
           Developer
-        </Link>
-        <Link
-          to="/illustration"
+        </span>
+        <span
           className={`nav-link ${
             location.pathname.includes("illustration") ? "active" : ""
           }`}
-          onClick={closeMenu}
+          onClick={() => {
+            navigate("/illustration");
+            closeMenu();
+          }}
         >
           Illustration
-        </Link>
+        </span>
       </div>
     </nav>
   );
