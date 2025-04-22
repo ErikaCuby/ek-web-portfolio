@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import PageWrapper from "./components/PageWrapper";
 import ScrollToTop from "./components/ScrollToTop";
 import ThankYouPage from "./pages/ThankYouPage";
+import NotFoundPage from "./pages/NotFoundPage";
+
 
 
 
@@ -33,6 +35,7 @@ function App() {
             <Route path="/illustration" element={<Illustration />} />
             <Route path="/about" element={<AboutContactPage />} />
             <Route path="/thank-you" element={<ThankYouPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
 
           {/* Render Footer on all pages except the landing page */}
