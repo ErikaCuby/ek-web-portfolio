@@ -30,9 +30,15 @@ const AboutContactPage = () => {
   return (
     <div className="about-contact-page" id="intro">
       <section className="hero">
-        <div className="hero-image" />
+        <div className="hero-image">
+          <img
+            src="/images/profile-photo.jpg"
+            alt="Erika Kubickova"
+            className="hero-photo"
+          />
+        </div>
         <div className="hero-intro">
-          <h1>Erika Kubickova</h1>
+          <h1>Erika Kubíčková</h1>
           <p>
             Front-End Developer. Illustrator. Marathon Enthusiast. Emotionally
             caffeinated.
@@ -42,50 +48,26 @@ const AboutContactPage = () => {
 
       <section className="intro">
         <p>
-          Hi, I’m Erika. Front-end developer. Illustrator. And someone who runs
-          marathons on purpose. Not for the medals (they are cool though). Not
-          for the wellness aesthetic. I do it because it’s the only time my
-          brain shuts up and lets me daydream… until kilometer 32, when I start
-          questioning everything, including my shoe choices and life path.
+          Hi, I’m Erika, Front-End Developer, Illustrator, and Marathon
+          enthusiast from Slovakia, currently navigating life (and icy
+          sidewalks) in Oslo, Norway. I run because it's the only time my brain
+          shuts up long enough to think clearly… until kilometer 32, when I
+          start questioning everything from my shoe choice to my entire
+          existence. Building things in React feels oddly similar. Start strong,
+          look cute, then spend 4 hours debugging a `map()` like it's
+          gaslighting me. But hey, the UI loads eventually, and I pretend I
+          planned it all.
         </p>
 
         <p>
-          Building in React feels oddly similar. It starts off dreamy, clean
-          files, cozy components. Then map begins its passive-aggressive
-          nonsense, and suddenly I’m debugging like I’m in a toxic relationship
-          with my own app. But it loads eventually. And I act like I knew what I
-          was doing all along.
-        </p>
-
-        <p>
-          I like things tidy. My folders. My Figma boards. My energy. I rename
-          files only when necessary. I write commit messages like they’re love
-          notes to future me. No chaos. No “final-final-really-this-time” lies.
-          Just thoughtful breadcrumbs from one semi-stable version of myself to
-          another.
-        </p>
-
-        <p>
-          Some days, the code flows. Some days, my eyeliner does. Rarely both.
-          I’ve seen my mascara wage war with midnight coding sessions, trying to
-          figure out which one of us will stay fresh the longest. Spoiler: it’s
-          never me.
-        </p>
-
-        <p>
-          When I have a good hair day, everything gets done faster. When I’m
-          running late and still hit alignment on the first try? I feel
-          unstoppable. I bring that same energy to every project — stubborn,
-          soft, slightly sarcastic, and powered by caffeine and curiosity.
-        </p>
-
-        <p>
-          My world lives somewhere between design grids, running shoes, and 2AM
-          code that “definitely just needs a few tweaks.” Whether it’s pixels,
-          pen strokes, or pacing, I finish what I start — usually with smudged
-          mascara and dramatic pride. If you’ve made it this far, I’m guessing
-          we’d work well together. So say hi. Let’s build something weird,
-          smart, beautiful… and maybe a little sweaty.
+          My vibe? Organized chaos with good lighting. I rename files only when
+          I must, write commit messages like polite notes to future me, and yes,
+          code sometimes with smudged mascara and stubborn determination.
+          Whether I’m pushing a new component, layering an illustration, or
+          sprinting uphill in a storm, I finish what I start. If you're into
+          clean code, honest design, and a slightly dramatic dev who runs on
+          filter coffee, pain au chocolat and negronies (yum yum) — we’ll get
+          along just fine.
         </p>
       </section>
 
@@ -94,10 +76,11 @@ const AboutContactPage = () => {
         <div className="skill-icons">
           <span>React</span>
           <span>JavaScript</span>
-          <span>HTML/CSS</span>
+          <span>Python</span>
           <span>Figma</span>
           <span>Illustration</span>
           <span>Consistency™</span>
+          <span>Adobe Photoshop</span>
         </div>
       </section>
 

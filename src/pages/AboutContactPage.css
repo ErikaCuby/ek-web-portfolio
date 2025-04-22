@@ -1,7 +1,7 @@
 /* AboutContact.css */
 
 .about-contact-page {
-  padding: 2rem;
+  padding: 3rem;
   background-color: var(--background-color);
   color: var(--text-color);
   max-width: 1100px;
@@ -11,17 +11,27 @@
 
 .hero {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
+  flex-shrink: 0;
+}
+
+.hero-photo {
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
-  background: var(--muted-pink);
-  box-shadow: var(--box-shadow);
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-intro {
+  flex: 1;
 }
 
 .hero-intro h1 {
@@ -33,11 +43,11 @@
 .hero-intro p {
   margin: 0.5rem 0 0;
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .intro p {
-    margin-bottom: 1rem;
-    line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .skills {
@@ -49,6 +59,7 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  color: white;
 }
 
 .skill-icons span {
@@ -56,7 +67,7 @@
   background: var(--secondary-color);
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow);
 }
 
 .timeline {
@@ -126,10 +137,30 @@
 }
 
 @keyframes bounce {
-  0% { transform: translateY(0); }
-  30% { transform: translateY(-5px); }
-  60% { transform: translateY(3px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 2rem;
 }
 
 .contact-form {
@@ -164,3 +195,26 @@
   background: var(--secondary-color);
 }
 
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 3rem;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  .hero-photo {
+    width: 340px;
+    height: 340px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+    .hero-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-intro p {
+        font-size: 1.5rem;
+    }
+}
