@@ -1,14 +1,15 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import developerProjects from "../data/developerProjects.json";
+import NotFoundPage from "./NotFoundPage";
 
 const DeveloperCaseStudy = () => {
   const { slug } = useParams();
   const project = developerProjects.find((p) => p.slug === slug);
 
-  if (!project || !project.caseStudy) {
-    return <p>Project not found 😢</p>;
-  }
+if (!project || !project.caseStudy) {
+  return <NotFoundPage />;
+}
 
   const { title, date, heroImage, sections } = project.caseStudy;
 
